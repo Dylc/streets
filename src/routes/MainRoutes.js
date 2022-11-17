@@ -4,13 +4,7 @@ import { HomePage } from "pages";
 
 const MainRoutes = {
   path: "/",
-  element: <HomePage />, // <div> Main</div>,
-  // children: [
-  //   {
-  //     path: "/counter",
-  //     element: <Counter />,
-  //   },
-  // ],
+  element: <HomePage />,
 };
 
 export default MainRoutes;
