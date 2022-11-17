@@ -1,18 +1,23 @@
-import { styled } from "@mui/material/styles";
+import Map, { Source, Layer } from "react-map-gl";
+import { layerStyle } from "store/mapProperties";
 
-const Box = styled("div")`
-  z-index: 1;
-  position: fixed;
-  left: 50%;
-  top: 25%;
-  transform: translate(-50%, -50%);
-  border-radius: 5px;
-  background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-`;
-
-export function Map({ children }) {
-  return <Box>{children}</Box>;
+export function MapContainer({ geojson }) {
+  return (
+    <Map
+      mapboxAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}
+      initialViewState={{
+        longitude: 34.99758,
+        latitude: 31.89802,
+        zoom: 12.79,
+      }}
+      style={{ width: "100%", height: "100%" }}
+      mapStyle="mapbox://styles/mapbox/streets-v9"
+    >
+      <Source id="my-data" type="geojson" data={geojson}>
+        <Layer {...layerStyle} />
+      </Source>
+    </Map>
+  );
 }
 
-export default Map;
+export default MapContainer;
