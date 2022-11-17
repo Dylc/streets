@@ -8,6 +8,7 @@ const Box = styled("div")`
   transform: translate(-50%, -50%);
   border-radius: 5px;
   background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 `;
 
 export default function Container({ children }) {
