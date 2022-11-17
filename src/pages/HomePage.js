@@ -10,7 +10,7 @@ export default function HomePage() {
     <>
       <HomeImageBackground />
       <HomePageCenterContainer>
-        <StreetsSelector width={650} height={80} />
+        <StreetsSelector width={650} />
       </HomePageCenterContainer>
     </>
   );
