@@ -18,14 +18,14 @@ export const STREETS = [
   {
     title: {
       english: "Yigal Yadin",
-      hebrew: "רב אלוף יגאל ידין",
+      hebrew: "רא״ל יגאל ידין",
     },
     neighborhood: NEIGHBORHOODS.Maginim,
   },
   {
     title: {
       english: "David Elazar",
-      hebrew: "רב אלוף דוד אלעזר",
+      hebrew: "רא״ל דוד אלעזר",
     },
     neighborhood: NEIGHBORHOODS.Maginim,
   },
