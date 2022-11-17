@@ -1,9 +1,10 @@
+import { StreetPage } from "pages";
 import React from "react";
 // import Loadable from "ui-component/Loadable";
 
 const StreetsRoutes = {
   path: "/streets/:name",
-  element: <div> StreetsRoutes </div>,
+  element: <StreetPage />,
 };
 
 export default StreetsRoutes;

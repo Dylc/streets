@@ -5,7 +5,7 @@ import {
   HomePageCenterContainer,
 } from "components";
 
-export default function HomePage() {
+export function HomePage() {
   return (
     <>
       <HomeImageBackground />

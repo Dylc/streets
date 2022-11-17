@@ -8,10 +8,8 @@ import { useNavigate } from "react-router-dom";
 export default function StreetsSelector({ width }) {
   const navigate = useNavigate();
 
-  const handleOnStreetClick = (event, value) => {
-    console.log("value.name.english", value.name.english);
-    return navigate(`/streets/${value.name.english}`);
-  };
+  const handleOnStreetClick = (event, value) =>
+    navigate(`/streets/${value.id}`);
 
   return (
     <Autocomplete

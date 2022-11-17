@@ -2,6 +2,7 @@ import NEIGHBORHOODS from "./neighborhoods";
 
 export const STREETS = [
   {
+    id: "odem",
     name: {
       english: "Odem",
       hebrew: "אדם",
@@ -9,6 +10,7 @@ export const STREETS = [
     neighborhood: NEIGHBORHOODS.AvneiChen,
   },
   {
+    id: "yahalom",
     name: {
       english: "Yahalom",
       hebrew: "יהלום",
@@ -16,6 +18,7 @@ export const STREETS = [
     neighborhood: NEIGHBORHOODS.AvneiChen,
   },
   {
+    id: "yigalyadin",
     name: {
       english: "Yigal Yadin",
       hebrew: "רא״ל יגאל ידין",
@@ -23,6 +26,7 @@ export const STREETS = [
     neighborhood: NEIGHBORHOODS.Maginim,
   },
   {
+    id: "davidelazar",
     name: {
       english: "David Elazar",
       hebrew: "רא״ל דוד אלעזר",
