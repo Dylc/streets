@@ -15,6 +15,25 @@ export const STREETS = [
       hebrew: "אדם",
     },
     neighborhood: NEIGHBORHOODS.AvneiChen,
+    geojson: {
+      type: "FeatureCollection",
+      features: [
+        {
+          type: "Feature",
+          properties: {},
+          geometry: {
+            coordinates: [
+              [34.99352000473971, 31.904574389715094],
+              [34.99476028196341, 31.90438295171242],
+              [34.996045660176975, 31.904188322668745],
+              [34.99797372912218, 31.903866068680998],
+              [34.99869412930394, 31.903767913346584],
+            ],
+            type: "LineString",
+          },
+        },
+      ],
+    },
   },
   {
     id: "yahalom",
@@ -64,7 +83,7 @@ export const STREETS = [
       english: "Yigal Yadin",
       hebrew: "רא״ל יגאל ידין",
     },
-    neighborhood: NEIGHBORHOODS.Maginim,
+    neighborhood: NEIGHBORHOODS.HaMeginim,
     geojson: {
       type: "FeatureCollection",
       features: [
@@ -97,7 +116,33 @@ export const STREETS = [
       english: "David Elazar",
       hebrew: "רא״ל דוד אלעזר",
     },
-    neighborhood: NEIGHBORHOODS.Maginim,
+    neighborhood: NEIGHBORHOODS.HaMeginim,
+    geojson: {
+      type: "FeatureCollection",
+      features: [
+        {
+          type: "Feature",
+          properties: {},
+          geometry: {
+            coordinates: [
+              [35.003750547271466, 31.90728722290578],
+              [35.00333534143675, 31.907430413768253],
+              [35.00256980567917, 31.907854477708],
+              [35.00220974436928, 31.908157379325104],
+              [35.00128231903983, 31.90904654808422],
+              [35.00072386449543, 31.90958394531164],
+              [35.00013673749521, 31.91003828882434],
+              [34.99930622448343, 31.910674441123362],
+              [34.99864773397951, 31.911192111054262],
+              [34.998102675540935, 31.911613431803957],
+              [34.997278430165096, 31.912277309584624],
+              [34.996630246133606, 31.91281018706536],
+            ],
+            type: "LineString",
+          },
+        },
+      ],
+    },
   },
 ];
 

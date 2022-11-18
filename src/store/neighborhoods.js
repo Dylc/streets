@@ -1,6 +1,6 @@
 export const NEIGHBORHOODS = {
   AvneiChen: "Avnei Chen",
-  Maginim: "Maginim",
+  HaMeginim: "HaMeginim",
   Reut: "Re'ut",
   Maccabim: "Maccabim",
   HaKeramim: "HaKeramim",

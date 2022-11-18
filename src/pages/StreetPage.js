@@ -6,12 +6,12 @@ import SplitPanel from "react-split-pane";
 import Pane from "react-split-pane/lib/Pane";
 
 export function StreetPage() {
-  const { geojson } = useLoaderData();
+  const street = useLoaderData();
 
   return (
     <SplitPanel split="vertical">
       <Pane initialSize="50%" minSize="20%" maxSize="50%">
-        <Map geojson={geojson} />
+        <Map street={street} />
       </Pane>
       <Pane initialSize="50%" minSize="20%">
         Text with Images
