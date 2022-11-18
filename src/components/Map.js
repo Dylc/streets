@@ -1,4 +1,11 @@
-import Map, { Source, Layer } from "react-map-gl";
+import Map, {
+  Source,
+  Layer,
+  FullscreenControl,
+  GeolocateControl,
+  NavigationControl,
+  ScaleControl,
+} from "react-map-gl";
 import {
   defaultViewState,
   initialViewState,
@@ -6,7 +13,7 @@ import {
 } from "store/mapProperties";
 
 export function MapContainer({ street }) {
-  const { geojson, neighborhood } = street;
+  const { geojson, neighborhood, id } = street;
 
   return (
     <Map
@@ -15,9 +22,13 @@ export function MapContainer({ street }) {
       style={{ width: "100%", height: "100%" }}
       mapStyle="mapbox://styles/mapbox/streets-v9"
     >
-      <Source id="my-data" type="geojson" data={geojson}>
+      <Source id={`${id}-source`} type="geojson" data={geojson}>
         <Layer {...layerStyle} />
       </Source>
+      <FullscreenControl />
+      <GeolocateControl />
+      <NavigationControl />
+      <ScaleControl />
     </Map>
   );
 }
