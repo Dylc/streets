@@ -11,10 +11,18 @@ export default function StreetsSelector({ width }) {
   const handleOnStreetClick = (event, value) =>
     navigate(`/streets/${value.id}`);
 
+  const sorted = STREETS.sort((a, b) => {
+    const first = a.neighborhood.toUpperCase();
+    const second = b.neighborhood.toUpperCase();
+    if (first < second) return -1;
+    if (first > second) return 1;
+    return 0;
+  });
+
   return (
     <Autocomplete
       id="grouped-demo"
-      options={STREETS.sort((a, b) => a.neighborhood - b.neighborhood)}
+      options={sorted}
       groupBy={(option) => option.neighborhood}
       getOptionLabel={(option) => option.name.english}
       sx={{ width }}
